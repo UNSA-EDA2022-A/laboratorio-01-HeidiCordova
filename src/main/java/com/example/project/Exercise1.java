@@ -16,7 +16,39 @@ public class Exercise1 {
 
 	public String convertirBaseGabriel(int a) {
 
-		// TO DO
-		return "El numero proporcionado no esta en base Gabriel.";
+		    String numCadena= Integer.toString(decimal);
+		    int[] numero= new int[numCadena.length()];
+		    int numerodos=0;
+		    int numeroGab=0;
+		    String numeroGabriel="";
+		    int k=numCadena.length();
+		    //rellenar el arreglo
+		    for (int i = 0; i < numCadena.length();i++) {
+		    	numero[i]=Integer.parseInt(numCadena.substring(i,i+1));
+
+
+		    //parametros
+		    		if(numero[i]<3 && numero[i]>=0 && numerodos<=1 && numero[numero.length-1]!=2) {//solo numeros de 0 a 2
+		    	
+		    			if(numero[i]==2) {
+		    				numerodos++;//para que la cantidad de "2" no sea mayor A 1
+		    			}
+		    			//convertir a base gabriel
+		    
+		    			int ga=(int) Math.pow(2,k);
+
+		    			int	numeroGabR= numero[i]*(ga-1);
+		    			numeroGab+=numeroGabR;
+		    		}else {
+
+		    			return "El numero proporcionado no esta en base Gabriel.";
+		    		}
+		    
+		    		k--;//el indice va disminuyendo
+
+		    }
+
+		    numeroGabriel= Integer.toString(numeroGab);
+			return numeroGabriel;	
 	}
 }
