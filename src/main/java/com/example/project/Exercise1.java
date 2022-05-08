@@ -28,7 +28,7 @@ public class Exercise1 {
 
 
 		    //parametros
-		    		if(numero[i]<3 && numero[i]>=0 && numerodos<=1 && numero[numero.length-1]!=2) {//solo numeros de 0 a 2
+		    		if(numero[i]<3 && numero[i]>=0 && numerodos<=1 && numero[numero.length-1]!=2 && numCadena.indexOf("0")>=0&& numCadena.indexOf("1")>=0) {//solo numeros de 0 a 2
 		    	
 		    			if(numero[i]==2) {
 		    				numerodos++;//para que la cantidad de "2" no sea mayor A 1
