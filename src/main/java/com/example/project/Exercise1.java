@@ -16,7 +16,7 @@ public class Exercise1 {
 
 	public String convertirBaseGabriel(int a) {
 
-		    String numCadena= Integer.toString(decimal);
+		    String numCadena= Integer.toString(a);
 		    int[] numero= new int[numCadena.length()];
 		    int numerodos=0;
 		    int numeroGab=0;
